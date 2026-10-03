@@ -1,25 +1,40 @@
 <div align="center">
 
-# Roblox Account Manager Linux
+# Roblox Account Manager for Linux
 
-**Manage multiple Roblox accounts on Linux, with Sober and Mocktail support.**<br>
-**Gerencie várias contas Roblox no Linux, com suporte ao Sober e ao Mocktail.**
-
-<br>
-
-![License](https://img.shields.io/badge/license-MIT-2ea44f?style=for-the-badge)
-![Python](https://img.shields.io/badge/python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Platform](https://img.shields.io/badge/platform-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![GUI](https://img.shields.io/badge/GUI-Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white)
-![Stars](https://img.shields.io/github/stars/Kerneluxx/Roblox-Account-Manager-Linux?style=for-the-badge&color=f5c542)
+**Run multiple Roblox accounts on Linux. Built for Sober and Mocktail.**<br>
+**Várias contas Roblox no Linux ao mesmo tempo. Feito para Sober e Mocktail.**
 
 <br>
 
-[🇺🇸 English](#-english) &nbsp;•&nbsp; [🇧🇷 Português](#-português)
+[![License: MIT](https://img.shields.io/badge/license-MIT-2ea44f?style=for-the-badge)](LICENSE)
+![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Platform: Linux](https://img.shields.io/badge/platform-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![GUI: Qt](https://img.shields.io/badge/GUI-Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white)
+![Works with Sober and Mocktail](https://img.shields.io/badge/works%20with-Sober%20%7C%20Mocktail-6C5CE7?style=for-the-badge)
+<br>
+[![GitHub stars](https://img.shields.io/github/stars/Kerneluxx/Roblox-Account-Manager-Linux?style=for-the-badge&color=f5c542)](https://github.com/Kerneluxx/Roblox-Account-Manager-Linux/stargazers)
+[![Last commit](https://img.shields.io/github/last-commit/Kerneluxx/Roblox-Account-Manager-Linux?style=for-the-badge)](https://github.com/Kerneluxx/Roblox-Account-Manager-Linux/commits/main)
+[![Issues](https://img.shields.io/github/issues/Kerneluxx/Roblox-Account-Manager-Linux?style=for-the-badge)](https://github.com/Kerneluxx/Roblox-Account-Manager-Linux/issues)
+
+<br>
+
+[🇺🇸 English](#english) &nbsp;•&nbsp; [🇧🇷 Português](#portugues)
 
 </div>
 
 <br>
+
+<!--
+Add a screenshot: save it as docs/screenshot.png and uncomment the block below.
+<p align="center">
+  <img src="docs/screenshot.png" alt="Roblox Account Manager for Linux: main window listing several accounts with Sober" width="820">
+</p>
+-->
+
+**Roblox Account Manager for Linux** is a free, open-source alt manager to store, organize, and launch **multiple Roblox accounts on Linux**, including several at the same time. It works with **[Sober](https://sober.vinegarhq.org/)**, the unofficial Roblox client for Linux, and with **Mocktail**. Every account gets its own isolated profile, and credentials stay in an encrypted vault. It is a Linux-native alternative to Windows-only Roblox account managers.
+
+**Roblox Account Manager para Linux** é um gerenciador de contas gratuito e de código aberto para guardar, organizar e abrir **várias contas Roblox no Linux**, inclusive ao mesmo tempo. Funciona com o **[Sober](https://sober.vinegarhq.org/)**, o cliente não oficial do Roblox para Linux, e com o **Mocktail**. Cada conta tem um perfil isolado, e as credenciais ficam em um cofre criptografado. É uma alternativa nativa para Linux aos gerenciadores de contas Roblox feitos só para Windows.
 
 ## ✨ Highlights / Destaques
 
@@ -27,7 +42,7 @@
 | :-: | --- | --- |
 | 🔐 | Encrypted password vault | Cofre de senhas criptografado |
 | 👥 | Isolated profile per account | Perfil isolado por conta |
-| 🚀 | Launch several accounts at once | Várias contas abertas ao mesmo tempo |
+| 🚀 | Multi-instance: several accounts at once | Multi-instância: várias contas ao mesmo tempo |
 | 📥 | `username:password` import/export | Importação/exportação `usuario:senha` |
 | 🖥️ | Qt interface and command line | Interface Qt e linha de comando |
 | 🌍 | 5 languages | 5 idiomas |
@@ -44,7 +59,17 @@
 <br>
 
 <details open>
-<summary><h2 id="-english">🇺🇸 English</h2></summary>
+<summary><h2 id="english">🇺🇸 English</h2></summary>
+
+### 🎯 What it is for
+
+- Run **multiple Roblox accounts on Linux** at the same time, each in its own profile.
+- Switch between your main and alt accounts without logging out and back in.
+- Keep credentials in an encrypted vault instead of a text file or a browser.
+- Import and export account lists in the `username:password` format.
+- Launch a specific game (place ID) with a chosen account from the GUI or the terminal.
+
+It is not tied to a specific distribution: it runs wherever Python 3.10+ and Sober (Flatpak) or Mocktail are available.
 
 ### 📋 Requirements
 
@@ -159,12 +184,56 @@ Portuguese, English, Spanish, French, and German. To add a language, copy a bloc
 python3 -m unittest discover -s tests -t .
 ```
 
+### ❓ FAQ
+
+#### Can I run multiple Roblox accounts at the same time on Linux?
+
+Yes. With separate profiles enabled (the default), each account has its own isolated profile, so several accounts can be open at once. With separate profiles disabled, the program swaps the Sober session and only one account is open at a time.
+
+#### Does Roblox run on Linux?
+
+Roblox has no official Linux client. [Sober](https://sober.vinegarhq.org/), distributed as the Flatpak `org.vinegarhq.Sober`, is an unofficial client that fills that gap. This project manages accounts and profiles on top of Sober or Mocktail.
+
+#### Is this the same as Roblox Account Manager for Windows?
+
+No. This is an independent project written for Linux. It has no code or affiliation with Windows-only account managers.
+
+#### Are my passwords safe?
+
+Passwords are kept in a Fernet-encrypted vault with a key derived from your master password via scrypt, and the program never uses the network. Logins stored inside separate profiles are kept by the client itself and are not encrypted by this program, so full-disk encryption is recommended.
+
+#### Can I get banned for using it?
+
+The project only manages accounts, profiles, and sessions, and launches the client. Third-party clients and tools are outside Roblox's official support, though, so use them at your own risk and follow the Roblox Terms of Use.
+
+#### Does it work on Windows or macOS?
+
+No. It is Linux only.
+
+#### How do I move my accounts from a text file?
+
+Use the `username:password` format described in [Import and export](#-import-and-export), through the GUI or `main.py import accounts.txt`.
+
+### 🤝 Contributing
+
+Issues and pull requests are welcome. Run the test suite before submitting changes. If the project is useful to you, a ⭐ on the repository helps other Linux users find it.
+
 </details>
 
 <br>
 
 <details open>
-<summary><h2 id="-português">🇧🇷 Português</h2></summary>
+<summary><h2 id="portugues">🇧🇷 Português</h2></summary>
+
+### 🎯 Para que serve
+
+- Abrir **várias contas Roblox no Linux** ao mesmo tempo, cada uma em seu próprio perfil.
+- Alternar entre a conta principal e as secundárias sem sair e entrar de novo.
+- Guardar as credenciais em um cofre criptografado, em vez de um arquivo de texto ou do navegador.
+- Importar e exportar listas de contas no formato `usuario:senha`.
+- Abrir um jogo específico (ID do jogo) com a conta escolhida, pela interface ou pelo terminal.
+
+Não depende de uma distribuição específica: roda onde houver Python 3.10+ e o Sober (Flatpak) ou o Mocktail.
 
 ### 📋 Requisitos
 
@@ -279,6 +348,40 @@ Português, inglês, espanhol, francês e alemão. Para adicionar um idioma, cop
 python3 -m unittest discover -s tests -t .
 ```
 
+### ❓ Perguntas frequentes
+
+#### Dá para abrir várias contas Roblox ao mesmo tempo no Linux?
+
+Sim. Com os perfis separados ativados (padrão), cada conta tem seu próprio perfil isolado, então várias contas podem ficar abertas juntas. Com os perfis separados desativados, o programa alterna a sessão do Sober e apenas uma conta fica aberta por vez.
+
+#### O Roblox funciona no Linux?
+
+O Roblox não tem cliente oficial para Linux. O [Sober](https://sober.vinegarhq.org/), distribuído como o Flatpak `org.vinegarhq.Sober`, é um cliente não oficial que preenche essa lacuna. Este projeto gerencia contas e perfis em cima do Sober ou do Mocktail.
+
+#### É o mesmo que o Roblox Account Manager do Windows?
+
+Não. Este é um projeto independente, escrito para Linux, sem código nem vínculo com gerenciadores de contas feitos só para Windows.
+
+#### Minhas senhas ficam seguras?
+
+As senhas ficam em um cofre criptografado com Fernet, com chave derivada da senha mestra via scrypt, e o programa nunca usa a rede. Os logins guardados dentro dos perfis separados ficam com o próprio cliente e não são criptografados por este programa, por isso recomenda-se criptografia de disco.
+
+#### Posso ser banido por usar?
+
+O projeto apenas gerencia contas, perfis e sessões e abre o cliente. Mesmo assim, clientes e ferramentas de terceiros estão fora do suporte oficial do Roblox, então use por sua conta e risco e siga os Termos de Uso do Roblox.
+
+#### Funciona no Windows ou no macOS?
+
+Não. É somente para Linux.
+
+#### Como passo minhas contas de um arquivo de texto?
+
+Use o formato `usuario:senha` descrito em [Importação e exportação](#-importação-e-exportação), pela interface ou com `main.py import contas.txt`.
+
+### 🤝 Contribuindo
+
+Issues e pull requests são bem-vindos. Rode os testes antes de enviar alterações. Se o projeto for útil para você, uma ⭐ no repositório ajuda outros usuários de Linux a encontrá-lo.
+
 </details>
 
 <br>
@@ -288,5 +391,7 @@ python3 -m unittest discover -s tests -t .
 <div align="center">
 
 **MIT License** • See / Consulte [`LICENSE`](LICENSE)
+
+<sub>Roblox account manager Linux · Roblox multi-instance Linux · Roblox alt manager · multiple Roblox accounts Linux · Sober multiple accounts · gerenciador de contas Roblox Linux · várias contas Roblox Linux</sub>
 
 </div>
