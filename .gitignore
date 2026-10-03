@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.venv/
+*.log
+*.corrupt
+*.migrado
+cofre.json
+config.json
+estado.json
+perfis/
+sessoes/
+exportacoes/
+contas*.txt
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local environment files
+.env
